@@ -1,3 +1,7 @@
+[![Hamravesh Build and Deploy](https://github.com/MrSinaRJ/novin-dev-assignment/actions/workflows/hamravesh.yml/badge.svg?event=deployment)](https://github.com/MrSinaRJ/novin-dev-assignment/actions/workflows/hamravesh.yml)
+
+[![CI](https://github.com/MrSinaRJ/novin-dev-assignment/actions/workflows/ci.yml/badge.svg)](https://github.com/MrSinaRJ/novin-dev-assignment/actions/workflows/ci.yml)
+
 
 # 🧩 Chat App - Deployment Guide
 
