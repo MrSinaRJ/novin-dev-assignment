@@ -3,7 +3,6 @@ import { InjectModel } from '@nestjs/mongoose';
 import { randomUUID } from 'crypto';
 import { Model } from 'mongoose';
 import { CreateMessageDto } from './dtos/create-message.dto';
-import { QueryMessageDto } from './dtos/query-message.dto';
 import { Message, MessageDocument } from './schemas/message.schema';
 
 @Injectable()
@@ -12,10 +11,7 @@ export class MessageService {
     @InjectModel(Message.name) private _messageModel: Model<MessageDocument>,
   ) {}
 
-  async findMessagesByChatId(
-    queryMessageDto: QueryMessageDto,
-  ): Promise<Message[]> {
-    const { chatId } = queryMessageDto;
+  async findMessagesByChatId(chatId: string): Promise<Message[]> {
     if (!chatId) {
       throw new Error('Param (chatId) is required!');
     }
