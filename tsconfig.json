@@ -22,7 +22,8 @@
       "@config/*": ["src/config/*"],
       "@health/*": ["src/modules/health/*"],
       "@chat/*": ["src/modules/chat/*"],
-      "@database/*": ["src/modules/database/*"]
+      "@database/*": ["src/modules/database/*"],
+      "@message/*": ["src/modules/message/*"]
     }
   }
 }

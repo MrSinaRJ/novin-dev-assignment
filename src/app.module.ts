@@ -2,6 +2,7 @@ import { ChatModule } from '@chat/chat.module';
 import configuration, { AppConfig } from '@config/configuration';
 import { DatabaseModule } from '@database/database.module';
 import { HealthModule } from '@health/health.module';
+import { MessageModule } from '@message/message.module';
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
@@ -28,6 +29,7 @@ import { MongooseModule } from '@nestjs/mongoose';
     HealthModule,
     ChatModule,
     DatabaseModule,
+    MessageModule,
   ],
 })
 export class AppModule {}
