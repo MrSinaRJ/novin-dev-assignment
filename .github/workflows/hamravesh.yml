@@ -1,3 +1,5 @@
+name: Hamravesh Build and Deploy
+
 jobs:
   darkube_build_novin-dev-assignment_mrsinarj-test_sindad-c15:
     environment: hamravesh
