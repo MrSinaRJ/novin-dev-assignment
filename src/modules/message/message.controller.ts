@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Post } from '@nestjs/common';
+import { Body, Controller, Get, Param, Post } from '@nestjs/common';
 import { ApiOkResponse } from '@nestjs/swagger';
 import { CreateMessageDto } from './dtos/create-message.dto';
 import { QueryMessageDto } from './dtos/query-message.dto';
@@ -23,7 +23,7 @@ export class MessageController {
     type: [Message],
   })
   @Get(':chatId')
-  async findMessagesByChatId(@Body() queryMessageDto: QueryMessageDto) {
-    return this._messageService.findMessagesByChatId(queryMessageDto);
+  async findMessagesByChatId(@Param('chatId') chatId: string) {
+    return this._messageService.findMessagesByChatId(chatId);
   }
 }

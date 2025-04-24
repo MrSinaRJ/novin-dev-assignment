@@ -3,6 +3,8 @@
 [![CI](https://github.com/MrSinaRJ/novin-dev-assignment/actions/workflows/ci.yml/badge.svg)](https://github.com/MrSinaRJ/novin-dev-assignment/actions/workflows/ci.yml)
 
 
+[![Better Stack Badge](https://uptime.betterstack.com/status-badges/v1/monitor/1wlti.svg)](https://uptime.betterstack.com/?utm_source=status_badge)
+
 # 🧩 Chat App - Deployment Guide
 
 This project is built with **NestJS** and uses **MongoDB** for storage. It includes features like chat room creation, user joins, and messaging.
